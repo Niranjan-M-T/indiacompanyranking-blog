@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <footer style={{ textAlign: 'center', padding: '2rem', borderTop: '1px solid var(--border)', marginTop: 'auto', fontSize: '0.875rem', color: 'var(--muted)' }}>
           Made by <a href="https://studiohappens.tech" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--primary)' }}>studiohappens.tech</a>
         </footer>
+        <Script src="https://backlink-generator-tool.github.io/current-url-backlink-submitter/currentUrlBacklinkSubmitter.js" strategy="afterInteractive" />
       </body>
     </html>
   );
