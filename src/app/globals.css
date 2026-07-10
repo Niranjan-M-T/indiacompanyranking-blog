@@ -84,3 +84,13 @@ a:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
 }
+
+/* Hide backlink SEO script iframes injected into body */
+body > iframe {
+  display: none !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+}
