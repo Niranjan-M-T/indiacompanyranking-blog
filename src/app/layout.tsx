@@ -31,7 +31,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <div style={{ flex: 1 }}>{children}</div>
         <footer style={{ textAlign: 'center', padding: '2rem', borderTop: '1px solid var(--border)', marginTop: 'auto', fontSize: '0.875rem', color: 'var(--muted)' }}>
-          Made by <a href="https://studiohappens.tech" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--primary)' }}>studiohappens.tech</a>
+          <p>Made by <a href="https://studiohappens.tech" target="_blank" rel="noopener noreferrer" style={{ fontWeight: '600', color: 'var(--primary)' }}>studiohappens.tech</a></p>
+          <div style={{ marginTop: '0.5rem' }}>
+            <a href="https://karmalinks.io/?verificationId=6a5093ec9f427ceb406c4951" style={{ fontSize: '0.75rem', opacity: 0.5 }}>Karmalinks</a>
+          </div>
         </footer>
         <Script src="https://backlink-generator-tool.github.io/current-url-backlink-submitter/currentUrlBacklinkSubmitter.js" strategy="afterInteractive" />
       </body>
